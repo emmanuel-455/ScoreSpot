@@ -42,41 +42,41 @@ function App() {
       <ul>
         
         {matchData.map((match, index) => (
-          <li key={index} className='mb-14 md:px-24 px-5 flex it justify-between'>
+          <li key={index} className='mb-14 md:px-24 px-5 flex items-center justify-between'>
             
-            <div className='flex flex-col justify-center items-start'>
-              <p>{convertToNigeriaTimeWithDay(match.date)}</p>
-              <div className='flex justify-between'>
+            <div className='flex flex-col justify-center'>
+              <p className='font-bold mb-2'>{convertToNigeriaTimeWithDay(match.date)}</p>
+              <div className='flex  text-gray-400 mb-1 font-medium item justify-between'>
                 <p className='mr-7'>{match.status.type.description }</p>
-                <p>{match.competitions[0].status.displayClock}</p>
+                <p className=' text-xs'>{match.competitions[0].status.displayClock}</p>
 
              </div>
-              <div className='flex bg-slate-700 px-4'>
+              <div className='flex bg-slate-800 px-4 py-2'>
               <div className='flex items-center w-[60%] md:w-[300px]'>
                 <img className='w-[9%] mr-2' src={match.competitions[0].competitors[0].team.logo} alt="" />
                 <div className='mr-5 text-nowrap'>
-                  <p>{match.competitions[0].competitors[0].team.displayName}</p>
-                  <p className='text-xs'>{match.competitions[0].competitors[0].records[0].summary}</p>
+                  <p className='font-semibold text-gray-200 text-[16px]'>{match.competitions[0].competitors[0].team.displayName}</p>
+                  <p className='text-xs mb-2'>{match.competitions[0].competitors[0].records[0].summary}</p>
                 </div>
                 </div>
                 <p className='flex justify-end'>{match.competitions[0].competitors[0].score}</p>
               </div>
 
-              <div className='flex bg-slate-700 px-4'>
+              <div className='flex bg-slate-800 px-4'>
               <div className=' flex items-center w-[60%] md:w-[300px]'>
                 <img className='w-[9%] mr-2' src={match.competitions[0].competitors[1].team.logo} alt="" />
                 <div className='mr-5'>
-                  <p>{match.competitions[0].competitors[1].team.displayName}</p>
-                  <p className='text-xs'>{match.competitions[0].competitors[1].records[0].summary}</p>
+                  <p className='font-semibold text-gray-200 text-[16px]'>{match.competitions[0].competitors[1].team.displayName}</p>
+                  <p className='text-xs mb-2'>{match.competitions[0].competitors[1].records[0].summary}</p>
                 </div>
                 
                 </div>
-                <p>{ match.competitions[0].competitors[1].score}</p>
+                <p className='text-[16px]'>{ match.competitions[0].competitors[1].score}</p>
               </div>
             </div>
 
             <p>{match.venue.displayName}</p>
-            <div>
+            <div className='text-[15px]'>
                   <p><a className=' uppercase' href="">Summary</a></p>
                   <p><a className=' uppercase' href="">Statistics</a></p>
                 </div>
