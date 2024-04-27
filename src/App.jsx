@@ -10,7 +10,7 @@ function App() {
 
   async function fetchMatchData() {
     try {
-      const response = await fetch('http://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard');
+      const response = await fetch('https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard');
       const data = await response.json();
       console.log(data); // Log the entire data object
       setMatchData(data.events); // Set the match data in state
