@@ -55,7 +55,7 @@ function ScorePage() {
             <div className='flex flex-col w-full md:w-[60%] m-auto justify-center'>
               <div className='flex justify-between items-center mb-2'>
                 <p className='font-bold '>{convertToNigeriaTimeWithDay(match.date)}</p>
-                <Link className='font-bold uppercase text-sm' to="./stats">Statistics</Link>
+                
               </div>
               <div className='flex  text-gray-400 mb-1 font-medium item justify-between'>
                 <p className='mr-7'>{match.status.type.description }</p>
@@ -83,6 +83,7 @@ function ScorePage() {
                 </div>
                 <p className='text-[16px]'>{ match.competitions[0].competitors[1].score}</p>
               </div>
+              <Link className='font-bold uppercase text-right mt-2' to="./stats">Statistics</Link>
             </div>
 
             
