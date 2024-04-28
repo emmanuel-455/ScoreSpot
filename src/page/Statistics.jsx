@@ -3,7 +3,7 @@ import React from 'react'
 function Statistics() {
   return (
     <div className='text-white'>
-      statistics
+      <p>statistics</p>
     </div>
   )
 }
