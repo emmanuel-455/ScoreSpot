@@ -83,7 +83,7 @@ function ScorePage() {
                 </div>
                 <p className='text-[16px]'>{ match.competitions[0].competitors[1].score}</p>
               </div>
-              <Link className='font-bold uppercase text-right mt-2' to="./stats">Statistics</Link>
+              <Link className=' font-extrabold uppercase text-[16px] text-right mt-2' to="./stats">Statistics</Link>
             </div>
 
             
