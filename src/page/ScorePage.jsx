@@ -39,12 +39,12 @@ function ScorePage() {
 
   return (
     <div className='bg-black text-white'>
-      <div className='mb-14 w-full flex justify-between items-center bg-red-700 px-8 py-7'>
+      <div className='mb-14 w-full flex justify-between items-center bg-red-700 px-7 md:px-28 py-7'>
         <div>
-          <p className='text-3xl font-semibold'>{leagueName}</p>
+          <p className=' text-3xl md:text-4xl font-semibold'>{leagueName}</p>
           <p>England</p>
         </div>
-        <img className='w-[30%]' src={leagueLogo} alt="" />
+        <img className='w-[30%] md:w-[15%]' src={leagueLogo} alt="" />
       </div>
       <ul>
         
@@ -52,7 +52,10 @@ function ScorePage() {
           <li key={index} className='mb-14 md:px-24 px-5 flex items-center justify-between'>
             
             <div className='flex flex-col w-full md:w-[350px] justify-center'>
-              <p className='font-bold mb-2'>{convertToNigeriaTimeWithDay(match.date)}</p>
+              <div className='flex justify-between items-center mb-2'>
+                <p className='font-bold '>{convertToNigeriaTimeWithDay(match.date)}</p>
+                <p><a className=' uppercase font-bold' href="./statistics">Statistics</a></p>
+              </div>
               <div className='flex  text-gray-400 mb-1 font-medium item justify-between'>
                 <p className='mr-7'>{match.status.type.description }</p>
                 <p className=' text-xs'>{match.competitions[0].status.displayClock}</p>
@@ -84,7 +87,7 @@ function ScorePage() {
             <p className='md:block hidden'>{match.venue.displayName}</p>
             <div className='text-[15px] md:block hidden'>
               <p><a className=' uppercase' href="">Summary</a></p>
-              <p><a className=' uppercase' href="">Statistics</a></p>
+              <p><a className=' uppercase' href="./statistics">Statistics</a></p>
             </div>
             
           </li>
