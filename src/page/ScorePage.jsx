@@ -54,7 +54,7 @@ function ScorePage() {
             <div className='flex flex-col w-full md:w-[350px] justify-center'>
               <div className='flex justify-between items-center mb-2'>
                 <p className='font-bold '>{convertToNigeriaTimeWithDay(match.date)}</p>
-                <p><a className=' uppercase font-bold' href="./statistics">Statistics</a></p>
+                <p><a className=' uppercase font-bold' href="/statistics">Statistics</a></p>
               </div>
               <div className='flex  text-gray-400 mb-1 font-medium item justify-between'>
                 <p className='mr-7'>{match.status.type.description }</p>
