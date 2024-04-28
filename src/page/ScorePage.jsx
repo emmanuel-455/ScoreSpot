@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 function ScorePage() {
   const [matchData, setMatchData] = useState([]);
   const [matchOfTheDay, setMatchOfTheDay] = useState(null);
-  const [logo, setLogo] = useState("")
+  const [leagueName, setLeagueName] = useState("");
+  const [leagueLogo, setLeagueLogo] = useState("");
 
   useEffect(() => {
     fetchMatchData();
@@ -15,8 +16,9 @@ function ScorePage() {
       const data = await response.json();
       console.log(data); // Log the entire data object
       setMatchData(data.events); // Set the match data in state
-      setLogo(data)
-      findMatchOfTheDay(data.event); // Find the match of the day
+      setLeagueName(data.leagues[0].name);
+      setLeagueLogo(data.leagues[0].logos[0].href);
+      findMatchOfTheDay(data.events); // Find the match of the day
     } catch (error) {
       console.error('Error fetching match data:', error);
     }
@@ -39,11 +41,11 @@ function ScorePage() {
     <div className='bg-black text-white'>
       <div className='mb-14 w-full flex justify-between items-center bg-red-700 px-8 py-7'>
         <div>
-        <p className='text-3xl font-semibold'>{logo.leagues[0].name}</p>
-              <p>England</p>
+          <p className='text-3xl font-semibold'>{leagueName}</p>
+          <p>England</p>
         </div>
-        <img className='w-[30%]' src={logo.leagues[0].logos[0].href} alt="" />
-            </div>
+        <img className='w-[30%]' src={leagueLogo} alt="" />
+      </div>
       <ul>
         
         {matchData.map((match, index) => (
@@ -55,26 +57,25 @@ function ScorePage() {
                 <p className='mr-7'>{match.status.type.description }</p>
                 <p className=' text-xs'>{match.competitions[0].status.displayClock}</p>
 
-             </div>
+              </div>
               <div className='flex bg-slate-800 px-4 py-2'>
-              <div className='flex items-center w-full md:w-[300px]'>
-                <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[0].team.logo} alt="" />
-                <div className='mr-5 text-nowrap'>
-                  <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[0].team.displayName}</p>
-                  <p className='text-xs mb-2'>{match.competitions[0].competitors[0].records[0].summary}</p>
-                </div>
+                <div className='flex items-center w-full md:w-[300px]'>
+                  <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[0].team.logo} alt="" />
+                  <div className='mr-5 text-nowrap'>
+                    <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[0].team.displayName}</p>
+                    <p className='text-xs mb-2'>{match.competitions[0].competitors[0].records[0].summary}</p>
+                  </div>
                 </div>
                 <p className='flex justify-end'>{match.competitions[0].competitors[0].score}</p>
               </div>
 
               <div className='flex bg-slate-800 px-4'>
-              <div className=' flex items-center w-full md:w-[300px]'>
-                <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[1].team.logo} alt="" />
-                <div className='mr-5'>
-                  <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[1].team.displayName}</p>
-                  <p className='text-xs mb-2'>{match.competitions[0].competitors[1].records[0].summary}</p>
-                </div>
-                
+                <div className=' flex items-center w-full md:w-[300px]'>
+                  <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[1].team.logo} alt="" />
+                  <div className='mr-5'>
+                    <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[1].team.displayName}</p>
+                    <p className='text-xs mb-2'>{match.competitions[0].competitors[1].records[0].summary}</p>
+                  </div>
                 </div>
                 <p className='text-[16px]'>{ match.competitions[0].competitors[1].score}</p>
               </div>
@@ -82,20 +83,13 @@ function ScorePage() {
 
             <p className='md:block hidden'>{match.venue.displayName}</p>
             <div className='text-[15px] md:block hidden'>
-                  <p><a className=' uppercase' href="">Summary</a></p>
-                  <p><a className=' uppercase' href="">Statistics</a></p>
-                </div>
+              <p><a className=' uppercase' href="">Summary</a></p>
+              <p><a className=' uppercase' href="">Statistics</a></p>
+            </div>
             
           </li>
         ))}
       </ul>
-      {/* {matchOfTheDay && (
-        <div>
-          <h2>Match of the Day</h2>
-          <p>Date: {matchOfTheDay.date}</p>
-          <p>Score: {matchOfTheDay.score}</p>
-        </div>
-      )} */}
     </div>
   );
 }
