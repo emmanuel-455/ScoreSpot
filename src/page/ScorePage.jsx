@@ -51,17 +51,17 @@ function ScorePage() {
         {matchData.map((match, index) => (
           <li key={index} className='mb-14 md:px-24 px-5 flex items-center justify-between'>
             
-            <div className='flex flex-col w-full md:w-[350px] justify-center'>
+            <div className='flex flex-col w-full md:w-[60%] m-auto justify-center'>
               <div className='flex justify-between items-center mb-2'>
                 <p className='font-bold '>{convertToNigeriaTimeWithDay(match.date)}</p>
-                <p><a className=' uppercase font-bold' href="/statistics">Statistics</a></p>
+                <a className=' uppercase font-bold' href="/statistics">Statistics</a>
               </div>
               <div className='flex  text-gray-400 mb-1 font-medium item justify-between'>
                 <p className='mr-7'>{match.status.type.description }</p>
                 <p className=' text-xs'>{match.competitions[0].status.displayClock}</p>
 
               </div>
-              <div className='flex bg-slate-800 px-4 py-2'>
+              <div className='flex bg-slate-800 justify-between px-4 py-2'>
                 <div className='flex items-center w-full md:w-[300px]'>
                   <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[0].team.logo} alt="" />
                   <div className='mr-5 text-nowrap'>
@@ -72,7 +72,7 @@ function ScorePage() {
                 <p className='flex justify-end'>{match.competitions[0].competitors[0].score}</p>
               </div>
 
-              <div className='flex bg-slate-800 px-4'>
+              <div className='flex bg-slate-800 justify-between px-4'>
                 <div className=' flex items-center w-full md:w-[300px]'>
                   <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[1].team.logo} alt="" />
                   <div className='mr-5'>
@@ -84,11 +84,6 @@ function ScorePage() {
               </div>
             </div>
 
-            <p className='md:block hidden'>{match.venue.displayName}</p>
-            <div className='text-[15px] md:block hidden'>
-              <p><a className=' uppercase' href="">Summary</a></p>
-              <p><a className=' uppercase' href="./statistics">Statistics</a></p>
-            </div>
             
           </li>
         ))}
