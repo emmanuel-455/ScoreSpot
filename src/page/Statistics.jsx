@@ -38,12 +38,12 @@ function Statistics() {
       <Navbar />
       {matchData.map((match, index) => (
         <div className='m-auto' key={index}>
-          <div className='flex w-full md:w-[100%] justify-between items-center m-auto'>
-            <div className='flex flex-col justify-center items-center'>
+          <div className='flex px-3 w-full md:w-[100%] justify-between items-center m-auto'>
+            <div className='flex flex-col justify-center md:items-center items-start'>
               <div className='w-[60%] md:w-[20%] flex justify-center text-center bg-white rounded-xl'>
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[0].team.logo} alt="" />
               </div>
-              <p className='text-wrap text-[14px] mt-1'>{match.competitions[0].competitors[0].team.displayName}</p>
+              <p className='text-wrap text-xs md:text-[16px] mt-1'>{match.competitions[0].competitors[0].team.displayName}</p>
             </div>
             <div>
               <div className='flex flex-col justify-center items-center'>
@@ -51,17 +51,17 @@ function Statistics() {
                 <div className='flex flex-col justify-center items-center'>
                   <p className='md:text-[40px] font-semibold mb-2'>{match.competitions[0].competitors[0].score} - {match.competitions[0].competitors[1].score}</p>
                   <div className='flex  text-gray-400 mb-1 font-medium item items-center justify-between'>
-                    <p className='mr-7 text-sm'>{match.status.type.description}</p>
+                    <p className='mr-3 text-sm'>{match.status.type.description}</p>
                     <p className='text-xs'>{match.competitions[0].status.displayClock}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center md:items-center items-end'>
               <div className='w-[60%] md:w-[20%] flex justify-center text-center bg-white rounded-xl'>
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[1].team.logo} alt="" />
               </div>
-              <p className='flex flex-wrap text-[14px] mt-1'>{match.competitions[0].competitors[1].team.displayName}</p>
+              <p className='flex flex-wrap text-xs md:text-[16px] mt-1'>{match.competitions[0].competitors[1].team.displayName}</p>
             </div>
           </div>
         </div>
