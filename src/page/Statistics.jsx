@@ -44,7 +44,7 @@ function Statistics() {
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[0].team.logo} alt="" />
               </div>
               <p className='text-wrap text-xs md:text-[16px] mt-1'>{match.competitions[0].competitors[0].team.displayName}</p>
-              <p className='mt-6 font-xs text-gray-400'>{match.competitions[0].competitors[0].records[0].summary}</p>
+              <p className='mt-6 text-xs text-gray-400'>{match.competitions[0].competitors[0].records[0].summary}</p>
             </div>
             <div>
               <div className='flex flex-col justify-center items-center'>
@@ -63,7 +63,7 @@ function Statistics() {
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[1].team.logo} alt="" />
               </div>
               <p className='flex flex-wrap text-xs md:text-[16px] mt-1'>{match.competitions[0].competitors[1].team.displayName}</p>
-              <p className='mt-6 font-xs text-gray-400'>{match.competitions[0].competitors[1].records[0].summary}</p>
+              <p className='mt-6 text-xs text-gray-400'>{match.competitions[0].competitors[1].records[0].summary}</p>
             </div>
           </div>
 
