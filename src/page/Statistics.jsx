@@ -38,7 +38,7 @@ function Statistics() {
       <Navbar />
       {matchData.map((match, index) => (
         <div className='m-auto' key={index}>
-          <div className='flex border-b pb-3 border-gray-800 py-5 px-3 w-full md:w-[100%] justify-between items-center m-auto'>
+          <div className='flex border-b pb-3 border-gray-800 py-5 px-3 w-full md:w-[80%] justify-between items-center m-auto'>
             <div className='flex flex-col justify-center md:items-center items-start'>
               <div className='w-[60%] md:w-[20%] flex justify-center text-center bg-white rounded-xl'>
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[0].team.logo} alt="" />
@@ -67,8 +67,17 @@ function Statistics() {
             </div>
           </div>
 
-          <div>
-            okkk
+          <div className='w-full md:w-[55%] m-auto mt-7'>
+            <h1 className=' bg-gray-800 py-[2px] font-semibold pl-5'>
+            Stats
+            </h1>
+            <div>
+              <div>
+                <p>{ }</p>
+                <div></div>
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
       ))}
