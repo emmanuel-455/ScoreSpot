@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ScorePage />} />
           <Route path="/stats" element={<Statistics />} />
-
+          {/* Add more routes for other pages if needed */}
         </Routes>
       </div>
     </BrowserRouter>

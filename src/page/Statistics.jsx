@@ -69,13 +69,25 @@ function Statistics() {
 
           <div className='w-full md:w-[55%] m-auto mt-7'>
             <h1 className=' bg-gray-800 py-[2px] font-semibold pl-5'>
-            Stats
+            odds
             </h1>
             <div>
-              <div>
-                <p>{ }</p>
-                <div></div>
-                <p></p>
+              <div className='flex px-3 justify-between'>
+                <div className='flex w-[50px] flex-col justify-between items-center'>
+                  <p className='mb-2 text-lg font-semibold'>1</p>
+                  <p className=' text-sm'>{match.competitions[0].odds[0].awayTeamOdds.value}</p>
+                </div>
+
+                <div className=' flex flex-col justify-center items-center'>
+                  <p className='mb-2 text-lg font-semibold'>X</p>
+                  <p className='text-sm'>{match.competitions[0].odds[0].drawOdds.value}</p>
+                  
+                </div>
+
+                <div className='flex flex-col justify-center items-center'>
+                  <p className='mb-2 text-lg font-semibold'>2</p>
+                  <p className='text-sm'>{match.competitions[0].odds[0].homeTeamOdds.value}</p>
+                </div>
               </div>
             </div>
           </div>
