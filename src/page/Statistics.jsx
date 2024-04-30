@@ -69,7 +69,7 @@ function Statistics() {
 
           <div className='w-full md:w-[55%] m-auto mt-7'>
             <h1 className=' bg-gray-800 py-[2px] font-semibold pl-5'>
-            odds
+            ODDS
             </h1>
             <div>
               <div className='flex px-3 justify-between'>
@@ -87,6 +87,29 @@ function Statistics() {
                 <div className='flex flex-col justify-center items-center'>
                   <p className='mb-2 text-lg font-semibold'>2</p>
                   <p className='text-sm'>{match.competitions[0].odds[0].homeTeamOdds.value}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='w-full md:w-[55%] m-auto mt-28'>
+            <h1 className=' bg-gray-800 mb-3 py-[2px] font-semibold pl-5'>
+            FORM
+            </h1>
+            <div>
+              <div className='flex px-3 justify-between'>
+                <div className='flex flex-row justify-start items-center'>
+                <div className='w-[60%] md:w-[20%] flex justify-center text-center bg-white rounded-xl'>
+                <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[0].team.logo} alt="" />
+                  </div>
+                  <p>{match.competitions[0].competitors[0].team.displayName}</p>
+                </div>
+
+                <div className='flex flex-row justify-end items-center'>
+                <p>{match.competitions[0].competitors[1].team.displayName}</p>
+                <div className='w-[60%] md:w-[20%] flex justify-center text-center bg-white rounded-xl'>
+                <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[1].team.logo} alt="" />
+                  </div>
+                  
                 </div>
               </div>
             </div>
