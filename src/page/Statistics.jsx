@@ -133,39 +133,39 @@ function Statistics() {
             </h1>
             <div className='flex md:text-base text-sm justify-between'>
             <div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[0] && match.competitions[0].competitors[0].statistics[0].name !== undefined ? match.competitions[0].competitors[0].statistics[0].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[0] && match.competitions[0].competitors[0].statistics[0].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[0].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[1] && match.competitions[0].competitors[0].statistics[1].name !== undefined ? match.competitions[0].competitors[0].statistics[1].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[1] && match.competitions[0].competitors[0].statistics[1].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[1].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[2] && match.competitions[0].competitors[0].statistics[2].name !== undefined ? match.competitions[0].competitors[0].statistics[2].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[2] && match.competitions[0].competitors[0].statistics[2].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[2].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[3] && match.competitions[0].competitors[0].statistics[3].name !== undefined ? match.competitions[0].competitors[0].statistics[3].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[3] && match.competitions[0].competitors[0].statistics[3].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[3].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[4] && match.competitions[0].competitors[0].statistics[4].name !== undefined ? match.competitions[0].competitors[0].statistics[4].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[4] && match.competitions[0].competitors[0].statistics[4].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[4].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[5] && match.competitions[0].competitors[0].statistics[5].name !== undefined ? match.competitions[0].competitors[0].statistics[5].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[5] && match.competitions[0].competitors[0].statistics[5].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[5].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[6] && match.competitions[0].competitors[0].statistics[6].name !== undefined ? match.competitions[0].competitors[0].statistics[6].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[6] && match.competitions[0].competitors[0].statistics[6].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[6].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[7] && match.competitions[0].competitors[0].statistics[7].name !== undefined ? match.competitions[0].competitors[0].statistics[7].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[7] && match.competitions[0].competitors[0].statistics[7].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[7].displayValue : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[8] && match.competitions[0].competitors[0].statistics[8].name !== undefined ? match.competitions[0].competitors[0].statistics[8].name : null}</p>
                 <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[8] && match.competitions[0].competitors[0].statistics[8].displayValue !== undefined ? match.competitions[0].competitors[0].statistics[8].displayValue : null}</p>
               </div>
@@ -173,46 +173,46 @@ function Statistics() {
               
 
               <div className='flex md:text-base text-sm flex-col items-end justify-center'>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[0] && match.competitions[0].competitors[1].statistics[0].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[0].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[0] && match.competitions[0].competitors[1].statistics[0].name !== undefined ? match.competitions[0].competitors[1].statistics[0].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[1] && match.competitions[0].competitors[1].statistics[1].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[1].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[1] && match.competitions[0].competitors[1].statistics[1].name !== undefined ? match.competitions[0].competitors[1].statistics[1].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[2] && match.competitions[0].competitors[1].statistics[2].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[2].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[2] && match.competitions[0].competitors[1].statistics[2].name !== undefined ? match.competitions[0].competitors[1].statistics[2].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[3] && match.competitions[0].competitors[1].statistics[3].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[3].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[3] && match.competitions[0].competitors[1].statistics[3].name !== undefined ? match.competitions[0].competitors[1].statistics[3].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[4] && match.competitions[0].competitors[1].statistics[4].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[4].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[4] && match.competitions[0].competitors[1].statistics[4].name !== undefined ? match.competitions[0].competitors[1].statistics[4].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[5] && match.competitions[0].competitors[1].statistics[5].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[5].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[5] && match.competitions[0].competitors[1].statistics[5].name !== undefined ? match.competitions[0].competitors[1].statistics[5].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[6] && match.competitions[0].competitors[1].statistics[6].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[6].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[6] && match.competitions[0].competitors[1].statistics[6].name !== undefined ? match.competitions[0].competitors[1].statistics[6].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[7] && match.competitions[0].competitors[1].statistics[7].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[7].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[7] && match.competitions[0].competitors[1].statistics[7].name !== undefined ? match.competitions[0].competitors[1].statistics[7].name : null}</p>
               </div>
-              <div className='flex justify-between w-[160px] md:w-[200px]'>
+              <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[8] && match.competitions[0].competitors[1].statistics[8].displayValue !== undefined ? match.competitions[0].competitors[1].statistics[8].displayValue : null}</p>
                   <p>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[1] && match.competitions[0].competitors[1].statistics && match.competitions[0].competitors[1].statistics[8] && match.competitions[0].competitors[1].statistics[8].name !== undefined ? match.competitions[0].competitors[1].statistics[8].name : null}</p>
