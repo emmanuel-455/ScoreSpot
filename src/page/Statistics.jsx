@@ -104,7 +104,7 @@ function Statistics() {
             <div>
               <div className='flex px-3 justify-between'>
                 <div className='flex flex-row justify-start items-center'>
-                <div className='w-[100px] md:w-[100px] flex justify-center text-center bg-white rounded-xl'>
+                <div className='w-[50px] md:w-[100px] flex justify-center text-center bg-white rounded-xl'>
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[0].team.logo} alt="" />
                   </div>
                   <div className='ml-3'>
@@ -119,7 +119,7 @@ function Statistics() {
                 <p className='text-xs flex items-center mb-2 md:text-sm font-semibold'>{match.competitions[0].competitors[1].team.displayName}</p>
                 <p className='text-sm'>{match.competitions[0].competitors[1].form}</p>
                 </div>
-                <div className='w-[100px] md:w-[100px] flex justify-center text-center bg-white rounded-xl'>
+                <div className='w-[50px] md:w-[100px] flex justify-center text-center bg-white rounded-xl'>
                 <img className='w-[50%] py-3 md:w-[90%]' src={match.competitions[0].competitors[1].team.logo} alt="" />
                   </div>
                   
@@ -131,7 +131,7 @@ function Statistics() {
             <h1 className=' bg-gray-800 mb-3 py-[2px] font-semibold pl-5'>
             STATISTICS
             </h1>
-            <div className='flex md:text-base text-sm justify-between'>
+            <div className='flex md:text-base text-sm justify-between px-[10px]'>
             <div>
               <div className='flex justify-between w-[160px] md:w-[200px] mb-2'>
                 <p className='mr-5'>{match.competitions && match.competitions[0] && match.competitions[0].competitors && match.competitions[0].competitors[0] && match.competitions[0].competitors[0].statistics && match.competitions[0].competitors[0].statistics[0] && match.competitions[0].competitors[0].statistics[0].name !== undefined ? match.competitions[0].competitors[0].statistics[0].name : null}</p>
