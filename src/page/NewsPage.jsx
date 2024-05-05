@@ -10,7 +10,7 @@ function NewsPage() {
 
   async function getData() {
     try {
-      const getNews = await fetch("http://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/news");
+      const getNews = await fetch("https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/news");
       const data = await getNews.json();
       console.log(data)
       setNews(data.articles);
