@@ -1,19 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScorePage from './page/ScorePage';
-import Statistics from './page/Statistics';
+import NewsPage from './page/NewsPage';
+
 
 function App() {
   return (
-    <BrowserRouter>
       <div>
-        <Routes>
-          <Route path="/" element={<ScorePage />} />
-          <Route path="/stats" element={<Statistics />} />
-          {/* Add more routes for other pages if needed */}
-        </Routes>
+      <ScorePage />
+      <NewsPage />
       </div>
-    </BrowserRouter>
+
   );
 }
 

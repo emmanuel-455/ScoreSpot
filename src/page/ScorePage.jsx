@@ -41,7 +41,7 @@ function ScorePage() {
   return (
     <div className=' text-white'>
       <Navbar />
-      <ul>
+      <ul className='mb-[200px]'>
         
         {matchData.map((match, index) => (
           <li key={index} className='mb-14 md:px-24 px-5 flex items-center justify-between'>
@@ -61,7 +61,11 @@ function ScorePage() {
                   <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[0].team.logo} alt="" />
                   <div className='mr-5 text-nowrap'>
                     <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[0].team.displayName}</p>
-                    <p className='text-xs mb-2'>{match.competitions[0].competitors[0].records[0].summary}</p>
+                    <div className='text-xs flex mb-2'>
+                      <p className='text-xs mr-3 '>{match.competitions[0].competitors[0].records[0].summary}</p>
+                      <p className=''>{match.competitions[0].competitors[0].form}</p>
+                    </div>
+                    
                   </div>
                 </div>
                 <p className='flex justify-end'>{match.competitions[0].competitors[0].score}</p>
@@ -72,12 +76,14 @@ function ScorePage() {
                   <img className='w-[40px] md:w-[9%] mr-2' src={match.competitions[0].competitors[1].team.logo} alt="" />
                   <div className='mr-5'>
                     <p className='font-semibold text-nowrap text-gray-200 md:text-[16px]'>{match.competitions[0].competitors[1].team.displayName}</p>
-                    <p className='text-xs mb-2'>{match.competitions[0].competitors[1].records[0].summary}</p>
+                    <div className='text-xs flex mb-2'>
+                      <p className='text-xs mr-3 '>{match.competitions[0].competitors[1].records[0].summary}</p>
+                      <p className=''>{match.competitions[0].competitors[1].form}</p>
+                    </div>
                   </div>
                 </div>
                 <p className='text-[16px]'>{ match.competitions[0].competitors[1].score}</p>
               </div>
-              <Link className=' font-extrabold uppercase text-[16px] text-right mt-2' to={"./stats"}>Statistics</Link>
             </div>
 
             
